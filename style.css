@@ -1,5 +1,17 @@
 /* Brand Styles */
 
+/* Fonts */
+/* 
+  'Nunito Bold Italic'
+  'Nunito Bold'
+  'Nunito Extra Bold'
+  'Nunito Extra Bold Italic'
+  'Nunito Italic'
+  'Nunito Light'
+  'Nunito Medium'
+  'Nunito Regular' 
+*/
+
 :root {
   --purple: #5d4586;
   --dark-blue: #5a9bc9;
@@ -11,6 +23,7 @@
   --black: #000000;
 
 }
+
 
 html {
   scroll-snap-type: y mandatory;
@@ -28,6 +41,17 @@ body {
   background-color: #c4c4f7;
   overflow-x: hidden;
 }
+
+/* Button style from MMIT Style Guide */
+
+.purp-btn {
+  background-color: var(--purple);
+  color: var(--white);
+  font-family: 'Nunito Bold';
+}
+
+
+
 .frame {
   width: 400px;
   height: 400px;
@@ -123,3 +147,4 @@ body {
 .card:hover { 
   transform: scale(1.05); 
 }
+
