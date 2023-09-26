@@ -4,18 +4,17 @@ const elts = {
 };
 const texts = [
   "",
-	"The Creative Kings",
-	"presents",
+	"CDS presents",
 	"Production & HTML",
-  "",
+  "(aka) Danielle's Dream Team",
+	"",
   "Featuring",
   "Danielle King",
   "Carlie Sages",
   "Shakira Ghant-David",
   "Alison Jacobson",
   "Aaron Shields",
-  "Steven Noyes",
-  "Guest Appearance from Figg"
+  "Steven Noyes"
 ];
 const morphTime = 3;
 const cooldownTime = 0.25;
