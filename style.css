@@ -1,3 +1,17 @@
+/* Brand Styles */
+
+:root {
+  --purple: #5d4586;
+  --dark-blue: #5a9bc9;
+  --green: #acce5a;
+  --teal: #78c6cd;
+  --light-blue: #87cle9;
+
+  --white: #ffffff;
+  --black: #000000;
+
+}
+
 html {
   scroll-snap-type: y mandatory;
 }
