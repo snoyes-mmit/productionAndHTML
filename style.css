@@ -48,6 +48,14 @@ body {
   background-color: var(--purple);
   color: var(--white);
   font-family: 'Nunito Bold';
+  text-transform: uppercase;
+}
+
+.grn-btn {
+  background-color: var(--green);
+  color: var(--white);
+  font-family: 'Nunito Bold';
+  text-transform: uppercase;
 }
 
 
