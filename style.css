@@ -38,9 +38,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #c4c4f7;
+  background-color: var(--dark-blue);
   overflow-x: hidden;
+  font-family: ;
 }
+
 
 /* Button style from MMIT Style Guide */
 
@@ -49,6 +51,8 @@ body {
   color: var(--white);
   font-family: 'Nunito Bold';
   text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .grn-btn {
@@ -56,6 +60,8 @@ body {
   color: var(--white);
   font-family: 'Nunito Bold';
   text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 
@@ -63,7 +69,7 @@ body {
 .frame {
   width: 400px;
   height: 400px;
-  background: #c4c4f7;
+  background: var(--dark-blue);
 }
 .center {
   perspective: 500;
@@ -136,7 +142,7 @@ body {
 	position: absolute;
 	width: 100%;
 	display: inline-block;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Nunito Bold', sans-serif;
 	font-size: 80pt;
 	text-align: center;
 	user-select: none;
