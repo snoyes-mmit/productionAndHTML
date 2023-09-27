@@ -17,13 +17,10 @@
   --dark-blue: #5a9bc9;
   --green: #acce5a;
   --teal: #78c6cd;
-  --light-blue: #87cle9;
-
+  --light-blue: rgb(135,195,233);
   --white: #ffffff;
   --black: #000000;
-
 }
-
 
 html {
   scroll-snap-type: y mandatory;
@@ -38,38 +35,45 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--dark-blue);
+  background-color: var(--light-blue);
   overflow-x: hidden;
-  font-family: ;
+  font-family: 'Nunito Regular';
 }
-
 
 /* Button style from MMIT Style Guide */
 
 .purp-btn {
   background-color: var(--purple);
+  opacity: .6;
   color: var(--white);
   font-family: 'Nunito Bold';
   text-transform: uppercase;
   padding: 10px;
   border-radius: 10px;
 }
-
+.purp-btn:hover {
+  opacity: 1;
+}
 .grn-btn {
   background-color: var(--green);
   color: var(--white);
+  opacity: .6;
   font-family: 'Nunito Bold';
   text-transform: uppercase;
   padding: 10px;
   border-radius: 10px;
 }
+.grn-btn:hover {
+  opacity: 1;
+}
+
 
 
 
 .frame {
   width: 400px;
   height: 400px;
-  background: var(--dark-blue);
+  background: var(--light-blue);
 }
 .center {
   perspective: 500;

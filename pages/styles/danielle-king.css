@@ -7,6 +7,14 @@
   --text-next-title: "Danielle King";
   --text-current-subtitle: "Production & HTML Manager";
   --text-next-subtitle: "Production & HTML Manager";
+
+  --purple: #5d4586;
+  --dark-blue: #5a9bc9;
+  --green: #acce5a;
+  --teal: #78c6cd;
+  --light-blue: rgb(135,195,233);
+  --white: #ffffff;
+  --black: #000000;
 }
 
 * {
@@ -50,6 +58,8 @@ header {
 
 footer {
   bottom: 0;
+  color: #000000;
+
 }
 
 header > *:nth-child(2),
@@ -120,13 +130,6 @@ h2::after {
   content: var(--text-next-subtitle);
   transition-delay: 0.5s;
   transform: translate(-50%, -100%);
-}
-
-hr {
-  opacity: 0.3;
-  border: none;
-  height: 2px;
-  background: #fff;
 }
 
 .logo {
@@ -232,35 +235,6 @@ hr {
   transform: translate(-50%, clamp(-2rem, -4vw, -1rem));
 }
 
-.content hr {
-  max-width: 400px;
-  margin: clamp(1rem, 5vw, 2.5rem) auto;
-}
-
-.randomize {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  flex-wrap: wrap;
-  cursor: pointer;
-}
-
-.randomize hr {
-  display: inline-block;
-  width: 25px;
-  margin: 0 1vw;
-}
-
-.randomize button {
-  background: #cfd865;
-  width: clamp(2rem, 4vw, 3rem);
-  aspect-ratio: 1/1;
-  border: none;
-  border-radius: 50%;
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  cursor: pointer;
-}
-
 /* animation */
 
 @keyframes rotate {
@@ -277,17 +251,22 @@ hr {
   }
 }
 
-/* sharethis */
-
-footer #st-1.sharethis-inline-share-buttons {
-  text-align: left;
+.bio {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer #st-1.sharethis-inline-share-buttons .st-btn {
-  border: none;
-  background: rgba(0, 0, 0, 0);
+.bio-card {
+  color: #000000;
+  border: 1px solid red;
+  text-align: center;
+  width: 400px;
+  text-transform: none;
+  background-color: var(--dark-blue);
 }
 
-footer #st-1.sharethis-inline-share-buttons .st-btn img {
-  filter: brightness(5);
+.bio-card img {
+  border-radius: 50%;
 }
