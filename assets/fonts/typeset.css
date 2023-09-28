@@ -1,0 +1,182 @@
+/* Nunito */
+@font-face {
+    font-family: 'Nunito Bold Italic';
+    src: url('./Nunito/Nunito-BoldItalic.woff2') format('woff2'),
+        url('./Nunito/Nunito-BoldItalic.woff') format('woff'),
+        url('./Nunito/Nunito-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito Bold';
+    src: url('./Nunito/Nunito-Bold.woff2') format('woff2'),
+        url('./Nunito/Nunito-Bold.woff') format('woff'),
+        url('./Nunito/Nunito-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito Extra Bold';
+    src: url('./Nunito/Nunito-ExtraBold.woff2') format('woff2'),
+        url('./Nunito/Nunito-ExtraBold.woff') format('woff'),
+        url('./Nunito/Nunito-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito Extra Bold Italic';
+    src: url('./Nunito/Nunito-ExtraBoldItalic.woff2') format('woff2'),
+        url('./Nunito/Nunito-ExtraBoldItalic.woff') format('woff'),
+        url('./Nunito/Nunito-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito Italic';
+    src: url('./Nunito/Nunito-Italic.woff2') format('woff2'),
+        url('./Nunito/Nunito-Italic.woff') format('woff'),
+        url('./Nunito/Nunito-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito Light';
+    src: url('./Nunito/Nunito-Light.woff2') format('woff2'),
+        url('./Nunito/Nunito-Light.woff') format('woff'),
+        url('./Nunito/Nunito-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito Medium';
+    src: url('./Nunito/Nunito-Medium.woff2') format('woff2'),
+        url('./Nunito/Nunito-Medium.woff') format('woff'),
+        url('./Nunito/Nunito-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito Regular';
+    src: url('./Nunito/Nunito-Regular.woff2') format('woff2'),
+        url('./Nunito/Nunito-Regular.woff') format('woff'),
+        url('./Nunito/Nunito-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* Open Sans */
+@font-face {
+    font-family: 'Open Sans Bold Italic';
+    src: url('./Open-Sans/OpenSans-BoldItalic.woff2') format('woff2'),
+        url('./Open-Sans/OpenSans-BoldItalic.woff') format('woff'),
+        url('./Open-Sans/OpenSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans Extra Bold';
+    src: url('./Open-Sans/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('./Open-Sans/OpenSans-ExtraBold.woff') format('woff'),
+        url('./Open-Sans/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('./Open-Sans/OpenSans-Bold.woff2') format('woff2'),
+        url('./Open-Sans/OpenSans-Bold.woff') format('woff'),
+        url('./Open-Sans/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans Extra Bold Italic';
+    src: url('./Open-Sans/OpenSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('./Open-Sans/OpenSans-ExtraBoldItalic.woff') format('woff'),
+        url('./Open-Sans/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans Italic';
+    src: url('./Open-Sans/OpenSans-Italic.woff2') format('woff2'),
+        url('./Open-Sans/OpenSans-Italic.woff') format('woff'),
+        url('./Open-Sans/OpenSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('./Open-Sans/OpenSans-Light.woff2') format('woff2'),
+        url('./Open-Sans/OpenSans-Light.woff') format('woff'),
+        url('./Open-Sans/OpenSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans Light Italic';
+    src: url('./Open-Sans/OpenSans-LightItalic.woff2') format('woff2'),
+        url('./Open-Sans/OpenSans-LightItalic.woff') format('woff'),
+        url('./Open-Sans/OpenSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans Medium';
+    src: url('./Open-Sans/OpenSans-Medium.woff2') format('woff2'),
+        url('./Open-Sans/OpenSans-Medium.woff') format('woff'),
+        url('./Open-Sans/OpenSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans Medium Italic';
+    src: url('./Open-Sans/OpenSans-MediumItalic.woff2') format('woff2'),
+        url('./Open-Sans/OpenSans-MediumItalic.woff') format('woff'),
+        url('./Open-Sans/OpenSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('./Open-Sans/OpenSans-Regular.woff2') format('woff2'),
+        url('./Open-Sans/OpenSans-Regular.woff') format('woff'),
+        url('./Open-Sans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans Semi Bold';
+    src: url('./Open-Sans/OpenSans-SemiBold.woff2') format('woff2'),
+        url('./Open-Sans/OpenSans-SemiBold.woff') format('woff'),
+        url('./Open-Sans/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans Semi Bold Italic';
+    src: url('./Open-Sans/OpenSans-SemiBoldItalic.woff2') format('woff2'),
+        url('./Open-Sans/OpenSans-SemiBoldItalic.woff') format('woff'),
+        url('./Open-Sans/OpenSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}

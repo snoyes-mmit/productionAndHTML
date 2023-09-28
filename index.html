@@ -5,117 +5,373 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Production and HTML</title>
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="./assets/fonts/">
+  <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+  <link rel="stylesheet" href="./assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div>
-    <section>
-      <div id="container">
-        <span id="text1"></span>
-        <span id="text2"></span>
+  <main>
+    <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Production and HTML</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+          <ul class="navbar-nav me-auto mb-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Games</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <svg id="filters">
-        <defs>
-          <filter id="threshold">
-            <feColorMatrix in="SourceGraphic"
-                type="matrix"
-                values="1 0 0 0 0
-                        0 1 0 0 0
-                        0 0 1 0 0
-                        0 0 0 255 -140" />
-          </filter>
-        </defs>
-      </svg>
-      <div class="frame">
-        <div class="center">
-          <div class="ball">
-            <div class="plane plane-1"></div>
-            <div class="plane plane-2"></div>
-            <div class="plane plane-3"></div>
-            <div class="plane plane-4"></div>
-            <div class="plane plane-5"></div>
-            <div class="plane plane-6"></div>
+    </nav>
+    <div class="container my-5 pt-5" style="padding-top: 70px !important;">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-lg" style=" background-color: #ffffff;">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h3 class="display-5 fw-bold lh-1">CDS Presents</h3>
+          <h2 class="display-4 fw-bold lh-1">Production and HTML</h2>
+          <h2 style="padding-left: 50px;">we are&nbsp;<span class="typewriter"></span></h2>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 shadow-lg">
+            <img class="rounded-lg-3" src="./assets/images/lightbulb.jpeg" alt="" width="540">
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <img src="./assets/images/scroll-down.png" alt="" style="padding-top: 90px; width: 90px; opacity: .2;">
+      </div>
+    </div>
+    <div class="album my-5 pt-5 pb-5 bg-light">
+      <div class="container album my-5 bg-light">
+        <h2 style="text-align: center; padding-bottom: 30px;">Meet the Team</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/danielle-king.png" alt="">
+              <div class="card-body">
+                <h2>Danielle King</h2>
+                <p class="card-text">"Successful people are not gifted; they just word hard and succeed on purpose." -G.K. Nielson</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./pages/danielle-king.html"><button type="button" class="btn btn-sm btn-outline-secondary">Portfolio</button></a>
+                  </div>
+                  <small class="text-muted">14 yrs</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/aaron-shields.png" alt="">
+              <div class="card-body">
+                <h2>Aaron Shields</h2>
+                <p class="card-text">"An excuse ain't nothin' but a fixed up lie."<br> -Grandma</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./pages/aaron-shields.html"><button type="button" class="btn btn-sm btn-outline-secondary">Portfolio</button></a>
+                  </div>
+                  <small class="text-muted">1 yr</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/steven-noyes.png" alt="">
+              <div class="card-body">
+                <h2>Steven Noyes</h2>
+                <p class="card-text">"How many programmers does it take to change a lightbulb? None. That's a hardware problem."</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./pages/steven-noyes.html"><button type="button" class="btn btn-sm btn-outline-secondary">Portfolio</button></a>
+                  </div>
+                  <small class="text-muted">1 yr</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/alison-jacobson.png" alt="">
+              <div class="card-body">
+                <h2>Alison Jacobson</h2>
+                <p class="card-text">"We make a living by what we get, but we make a life by what we give." -Winston Churchill</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./pages/alison-jacobson.html"><button type="button" class="btn btn-sm btn-outline-secondary">Portfolio</button></a>
+                  </div>
+                  <small class="text-muted">1 yr</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/carlie-sages.png" alt="">
+              <div class="card-body">
+                <h2>Carlie Sages</h2>
+                <p class="card-text">"We better win this sh*t."<br> -Danielle King</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./pages/carlie-sages.html"><button type="button" class="btn btn-sm btn-outline-secondary">Portfolio</button></a>
+                  </div>
+                  <small class="text-muted">2 yrs</small>
+                </div>
+              </div>
+            </div>
+            <div style="text-align: center;">
+              <h2 style="text-align: center; padding-top: 20px;">Meet Our Emotional Support</h2>
+              <p>The real reason we get our work done</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/shakirah-ghant-david.png" alt="">
+              <div class="card-body">
+                <h2>Shakirah Ghant-David</h2>
+                <p class="card-text">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, reprehenderit!"</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="./pages/shakirah-ghant-david.html"><button type="button" class="btn btn-sm btn-outline-secondary">Portfolio</button></a>
+                  </div>
+                  <small class="text-muted">9 yrs</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/Sami & Ozzy Watching Cat TV Square.jpg" alt="">
+              <div class="card-body">
+                <h2>Sami and Ozzy</h2>
+                <p class="card-text">"'Cat-naps' is derogatory."</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button>
+                  </div>
+                  <small class="text-muted">12 cat yrs</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/Fig Staring Square.png" alt="">
+              <div class="card-body">
+                <h2>Fig (miss figglesworth)</h2>
+                <p class="card-text">"Looking good, feline better!"</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/Hal Swimming Left Square.png" alt="">
+              <div class="card-body">
+                <h2>Hal</h2>
+                <p class="card-text">"I'm sorry Dave, I'm afraid I can't do that" -v. 9000</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button>
+                  </div>
+                  <small class="text-muted">1 yr</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/Sami & Ozzy Watching Cat TV Square.jpg" alt="">
+              <div class="card-body">
+                <h2>Sami and Ozzy</h2>
+                <p class="card-text">"'Cat-naps' is derogatory."</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button>
+                  </div>
+                  <small class="text-muted">12 cat yrs</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/Fig Staring Square.png" alt="">
+              <div class="card-body">
+                <h2>Fig (miss figglesworth)</h2>
+                <p class="card-text">"Looking good, feline better!"</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./assets/images/ava/Hal Swimming Left Square.png" alt="">
+              <div class="card-body">
+                <h2>Hal</h2>
+                <p class="card-text">"I'm sorry Dave, I'm afraid I can't do that" -v. 9000</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button>
+                  </div>
+                  <small class="text-muted">1 yr</small>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div>
+    </div>
+    <!-- Gallery -->
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img
+          src="./assets/images/index-gallery/Cool Danielle.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Cool Danielle"
+        />
+        <img
+          src="./assets/images/index-gallery/Steven Scheming.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Steven Counting Cards"
+        />
       </div>
-      <div>
-        <a href="#jump-down">
-          <img src="./assets/images/scroll-down.png" alt="Scroll Down" style="width: 100px; position: relative; left: 450px; top: 280px; opacity: .3;">
-        </a>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+          src="./assets/images/index-gallery/Aaron Fishbowl.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Aaron and the Fishbowl"
+        />
+        <img
+          src="./assets/images/index-gallery/The Best Leaders.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="The best leaders"
+        />
       </div>
-    </section>
-
-    <section style="padding-top: 80px; text-align: center;" id="jump-down">
-      <h2 style="font-size: 25px; font-weight: bold; padding-bottom: 40px;">Meet the Team</h2>
-      <div class="cards" style="margin: 0 auto; text-align: center; display: flex; justify-content: space-between;">
-        <div class="card">
-          <img src="./assets/images/ava/king.jpg" alt="" style="width: 70px; border-radius: 50%; padding-top: 10px; padding-bottom: 10px; margin-top: 20px;">
-          <p style="font-size: 20px;">Danielle King</p>
-          <p style="padding: 25px 15px 15px 15px;">"Successful people are not gifted; they just work hard and succeed on purpose."</p>
-          <p style="padding-bottom: 40px;">-G. K. Nielson</p>
-          <a class="purp-btn" href="./pages/danielle-king.html" style="text-decoration: none;">Portfolio</a>
-        </div>
-        <div class="card">
-          <img src="./assets/images/ava/sages.jpg" alt="" style="width: 70px; border-radius: 50%; padding-top: 10px; padding-bottom: 10px; margin-top: 20px;">
-          <p style="font-size: 20px;">Carlie Sages</p>
-          <p style="padding: 25px 5px 15px 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facilis cumque quisquam incidunt.</p>
-          <p style="padding-bottom: 40px;">-L. I. Dolar</p>
-          <a class="grn-btn" href="./pages/carlie-sages.html" style="text-decoration: none;">Portfolio</a>
-        </div>
-        <div class="card">
-          <img src="./assets/images/ava/ghant-david.jpg" alt="" style="width: 70px; border-radius: 50%; padding-top: 10px; padding-bottom: 10px; margin-top: 20px;">
-          <p style="font-size: 20px;">Shakirah Ghant-David</p>
-          <p style="padding: 25px 5px 15px 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quidem ipsam repellat eos quae minus.</p>
-          <p style="padding-bottom: 40px;">-L. I. Dolar</p>
-          <a class="purp-btn" href="./pages/shakirah-ghant-david.html" style="text-decoration: none;">Portfolio</a>
-        </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+          src="./assets/images/index-gallery/talking-heads1.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Talking heads 1"
+        />
+        <img
+          src="./assets/images/index-gallery/Carlie and Shakirah.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Carlie and Shakirah"
+        />
       </div>
-      <div class="cards" style="margin: 0 auto; text-align: center; display: flex; justify-content: space-between; padding-top: 40px;">
-        <div class="card">
-          <img src="./assets/images/ava/stockphoto.jpg" alt="" style="width: 70px; border-radius: 50%; padding-top: 10px; padding-bottom: 10px; margin-top: 20px;">
-          <p style="font-size: 20px;">Alison Jacobson</p>
-          <p style="padding: 25px 5px 15px 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quidem ipsam repellat eos quae minus.</p>
-          <p style="padding-bottom: 40px;">-L. I. Dolar</p>
-          <a class="grn-btn" href="./pages/alison-jacobson.html" style="text-decoration: none;">Portfolio</a>
-        </div>
-        <div class="card">
-          <img src="./assets/images/ava/shields.jpg" alt="" style="width: 70px; border-radius: 50%; padding-top: 10px; padding-bottom: 10px; margin-top: 20px;">
-          <p style="font-size: 20px;">Aaron Shields</p>
-          <p style="padding: 25px 5px 15px 5px;">“It's ok to fall. It's not ok to stay there.”</p>
-          <p style="padding-bottom: 40px;">"an excuse is just a fixed up lie."</p>
-          <p>&nbsp;</p>
-          <a class="purp-btn" href="./pages/aaron-shields.html" style="text-decoration: none;">Portfolio</a>
-        </div>
-        <div class="card">
-          <img src="./assets/images/ava/noyes.jpg" alt="" style="width: 70px; border-radius: 50%; padding-top: 10px; padding-bottom: 10px; margin-top: 20px;">
-          <p style="font-size: 20px;">Steven Noyes</p>
-          <p style="padding: 25px 5px 15px 5px;">“How many programmers does it take to change a light bulb? None, that's a hardware problem.”</p>
-          <p style="padding-bottom: 40px;">-Anon</p>
-          <a class="grn-btn" href="./pages/steven-noyes.html" style="text-decoration: none;">Portfolio</a>
-        </div>
+    </div>
+  <!-- Second Gallery -->
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img
+          src="./assets/images/index-gallery/"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="The team in clay"
+        />
+        <img
+          src="./assets/images/index-gallery/Carlie and Shakirah.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Wintry Mountain Landscape"
+        />
       </div>
-    </section>
-
-    <section>
-      <video controls loop width="700" height="600" style="padding-left: 100px; padding-top: 170px;">
-        <source src="./assets/video/Scene - Carlie 2.mp4">
-      </video>
-      <h2 style="text-align: center; padding-right: 30px;">Hello world!</h2>
-    </section>
-
-    <section style="padding-top: 50px; text-align: center;">
-      
-    </section>
-
-    <section>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aliquid placeat impedit ducimus quis laudantium dolorem ab non, maiores amet?</p>
-    </section>
-  </div>
-
-  
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Mountains in the Clouds"
+        />
+        <img
+          src="./assets/images/index-gallery/The Best Leaders.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="The best leaders"
+        />
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+          src="./assets/images/full-group.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="The team in clay"
+        />
+        <img
+          src="./assets/images/index-gallery/Steven Scheming.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Steven Counting Cards"
+        />
+      </div>
+    </div>
+    <!-- Gallery -->
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-2">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h5>Games</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Noyes Invaders</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tetris</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+          <div class="col-4 offset-1">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of whats new and exciting from us.</p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </main>
+  <script src="./assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
