@@ -8,25 +8,31 @@
   <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
   <link rel="stylesheet" href="./assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+    @media screen and (max-width: 400px) {
+      .on-desktop {
+        display: none;
+      }  
+    }
+    
+  </style>
 </head>
+
 <body>
   <main>
     <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Production and HTML</a>
+        <a class="navbar-brand" href="index.html">Production and HTML</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarsExample01">
           <ul class="navbar-nav me-auto mb-2">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="#portfolios">Portfolios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Games</a>
+              <a class="nav-link" href="pages/games.html">Games</a>
             </li>
           </ul>
         </div>
@@ -35,20 +41,20 @@
     <div class="container my-5 pt-5" style="padding-top: 70px !important;">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-lg" style=" background-color: #ffffff;">
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h3 class="display-5 fw-bold lh-1">CDS Presents</h3>
-          <h2 class="display-4 fw-bold lh-1">Production and HTML</h2>
+          <h3 class="display-5 fw-bold lh-1 pb-3">CDS Presents</h3>
+          <h2 class="display-4 fw-bold lh-1 pb-3">Production and HTML</h2>
           <h2 style="padding-left: 50px;">we are&nbsp;<span class="typewriter"></span></h2>
         </div>
-        <div class="col-lg-4 offset-lg-1 p-0 shadow-lg">
-            <img class="rounded-lg-3" src="./assets/images/lightbulb.jpeg" alt="" width="540">
+        <div class="col-lg-4 offset-lg-1 p-0">
+            <img class="rounded-lg-3" src="./assets/images/lightbulb.jpeg" alt="" width="540" style="position: relative; top: 40px;">
         </div>
       </div>
-      <div style="display: flex; justify-content: center;">
-        <img src="./assets/images/scroll-down.png" alt="" style="padding-top: 90px; width: 90px; opacity: .2;">
+      <div class="pt-lg-5" style="display: flex; justify-content: center;">
+        <a href="#portfolios"><img src="./assets/images/scroll-down.png" alt="" style="padding-top: 90px; width: 120px; opacity: .2;"></a>
       </div>
     </div>
     <div class="album my-5 pt-5 pb-5 bg-light">
-      <div class="container album my-5 bg-light">
+      <div id="portfolios" class="container album my-5 bg-light">
         <h2 style="text-align: center; padding-bottom: 30px;">Meet the Team</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
@@ -148,13 +154,13 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              <img src="./assets/images/ava/Sami & Ozzy Watching Cat TV Square.jpg" alt="">
+              <img src="./assets/images/ava/Sami and Ozzy.jpg" alt="">
               <div class="card-body">
                 <h2>Sami and Ozzy</h2>
                 <p class="card-text">"'Cat-naps' is derogatory."</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button>
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button> -->
                   </div>
                   <small class="text-muted">12 cat yrs</small>
                 </div>
@@ -163,15 +169,13 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img src="./assets/images/ava/Fig Staring Square.png" alt="">
+              <img src="./assets/images/ava/Shakirah's Dream Team.jpg" alt="">
               <div class="card-body">
-                <h2>Fig (miss figglesworth)</h2>
-                <p class="card-text">"Looking good, feline better!"</p>
+                <h2>Shakirah's Dream Team</h2>
+                <p class="card-text">"Children make your life important."<br>-Erma Bambeck</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button>
                   </div>
-                  <small class="text-muted">9 mins</small>
                 </div>
               </div>
             </div>
@@ -184,7 +188,7 @@
                 <p class="card-text">"I'm sorry Dave, I'm afraid I can't do that" -v. 9000</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button>
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button> -->
                   </div>
                   <small class="text-muted">1 yr</small>
                 </div>
@@ -193,15 +197,15 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img src="./assets/images/ava/Sami & Ozzy Watching Cat TV Square.jpg" alt="">
+              <img src="./assets/images/ava/Alison's Support System.jpg" alt="">
               <div class="card-body">
-                <h2>Sami and Ozzy</h2>
-                <p class="card-text">"'Cat-naps' is derogatory."</p>
+                <h2>I think it says Canal St.</h2>
+                <p class="card-text">I'm gonna go with that...  Alison's partner</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button>
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button> -->
                   </div>
-                  <small class="text-muted">12 cat yrs</small>
+                  <!-- <small class="text-muted">12 cat yrs</small> -->
                 </div>
               </div>
             </div>
@@ -210,28 +214,28 @@
             <div class="card shadow-sm">
               <img src="./assets/images/ava/Fig Staring Square.png" alt="">
               <div class="card-body">
-                <h2>Fig (miss figglesworth)</h2>
+                <h2>Fig <span style="font-size: 15px;">(aka miss figglesworth)</span></h2>
                 <p class="card-text">"Looking good, feline better!"</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button>
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button> -->
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text-muted">9 months</small>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img src="./assets/images/ava/Hal Swimming Left Square.png" alt="">
+              <img src="./assets/images/ava/Aaron's Support System.jpg" alt="">
               <div class="card-body">
-                <h2>Hal</h2>
-                <p class="card-text">"I'm sorry Dave, I'm afraid I can't do that" -v. 9000</p>
+                <h2>Aaron's Support Shelf</h2>
+                <p class="card-text">But really, all of our support shelf</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button>
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Petfolio</button> -->
                   </div>
-                  <small class="text-muted">1 yr</small>
+                  <!-- <small class="text-muted">1 yr</small> -->
                 </div>
               </div>
             </div>
@@ -282,26 +286,26 @@
     <div class="row">
       <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <img
-          src="./assets/images/index-gallery/"
+          src="./assets/images/index-gallery/talking-heads4.jpg"
           class="w-100 shadow-1-strong rounded mb-4"
-          alt="The team in clay"
+          alt="Talking heads 4"
         />
         <img
-          src="./assets/images/index-gallery/Carlie and Shakirah.png"
+          src="./assets/images/index-gallery/Danielle Bowling.jpg"
           class="w-100 shadow-1-strong rounded mb-4"
-          alt="Wintry Mountain Landscape"
+          alt="Danielle Bowling"
         />
       </div>
       <div class="col-lg-4 mb-4 mb-lg-0">
         <img
-          src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+          src="./assets/images/index-gallery/Fig Working.png"
           class="w-100 shadow-1-strong rounded mb-4"
-          alt="Mountains in the Clouds"
+          alt="Fig Working"
         />
         <img
-          src="./assets/images/index-gallery/The Best Leaders.png"
+          src="./assets/images/index-gallery/talking-heads5.jpg"
           class="w-100 shadow-1-strong rounded mb-4"
-          alt="The best leaders"
+          alt="Talking heads 5"
         />
       </div>
       <div class="col-lg-4 mb-4 mb-lg-0">
@@ -311,9 +315,9 @@
           alt="The team in clay"
         />
         <img
-          src="./assets/images/index-gallery/Steven Scheming.png"
+          src="./assets/images/index-gallery/Fig in Drink.png"
           class="w-100 shadow-1-strong rounded mb-4"
-          alt="Steven Counting Cards"
+          alt="Fig in Drink"
         />
       </div>
     </div>
@@ -321,52 +325,39 @@
     <div class="container">
       <footer class="py-5">
         <div class="row">
-          <div class="col-2">
-            <h5>Section</h5>
+          <div class="col-4">
+            <img src="./assets/images/logos/full-multi.png" alt="" style="background-color: #ffffff; width: 140px; border-radius: 20px; padding: 10px;">
+          </div>
+          <div class="col-3">
+            <h5 style="text-decoration: underline;">Portfolios</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              <li class="nav-item mb-2"><a href="./pages/danielle-king.html" class="nav-link p-0 text-muted">Danielle King</a></li>
+              <li class="nav-item mb-2"><a href="./pages/aaron-shields.html" class="nav-link p-0 text-muted">Aaron Shields</a></li>
+              <li class="nav-item mb-2"><a href="./pages/steven-noyes.html" class="nav-link p-0 text-muted">Steven Noyes</a></li>
+              <li class="nav-item mb-2"><a href="./pages/alison-jacobson.html" class="nav-link p-0 text-muted">Alison Jacobson</a></li>
+              <li class="nav-item mb-2"><a href="./pages/carlie-sages.html" class="nav-link p-0 text-muted">Carlie Sages</a></li>
+              <li class="nav-item mb-2"><a href="./pages/shakirah-ghant-david.html" class="nav-link p-0 text-muted">Shakirah Ghant-David</a></li>
             </ul>
           </div>
-          <div class="col-2">
-            <h5>Games</h5>
+          <div class="col-3">
+            <h5 style="text-decoration: underline;">Games</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Noyes Invaders</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tetris</a></li>
             </ul>
           </div>
-          <div class="col-2">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-          </div>
-          <div class="col-4 offset-1">
+          <div class="col-2 on-desktop">
             <form>
               <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of whats new and exciting from us.</p>
+              <p>Monthly digest of our talks and projects.</p>
               <div class="d-flex w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                <button class="btn btn-primary" type="button">Subscribe</button>
+                <a href="./pages/subscribe.html"><button class="purp-btn" type="button">Subscribe</button></a>
               </div>
             </form>
           </div>
         </div>
         <div class="d-flex justify-content-between py-4 my-4 border-top">
-          <p>&copy; 2021 Company, Inc. All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-          </ul>
+          <p>&copy; 2023 Danielle's Dream Team, Inc. All rights reserved.</p>
         </div>
       </footer>
     </div>

@@ -44,6 +44,7 @@ body {
 }
 .purp-btn:hover {
   opacity: 1;
+  cursor: pointer;
 }
 .grn-btn {
   background-color: var(--green);
@@ -56,6 +57,7 @@ body {
 }
 .grn-btn:hover {
   opacity: 1;
+  cursor: pointer;
 }
 /* Above the fold section */
 /* Hero Section */
