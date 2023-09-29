@@ -54,6 +54,7 @@ body {
   text-transform: uppercase;
   padding: 10px;
   border-radius: 10px;
+  border: 1px solid rgb(231, 231, 231);
 }
 .grn-btn:hover {
   opacity: 1;
